@@ -5,6 +5,10 @@ body {
     background:beige;
   }
 
+a {
+    text-decoration:none;
+}
+
   i {
     cursor: pointer;
   }
