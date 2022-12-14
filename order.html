@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="src/f2.css" rel="stylesheet">
+    <title>訂單</title>
+  </head>
+  <body>
+        <!-- Navbar -->
+        <header>    
+          <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:green;">
+            <a class="navbar-brand" href="index.html">海南佳敏</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navDropdown">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navDropdown">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">多功能复印紙</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="A4.html">A4</a></li>
+                    <li><a class="dropdown-item disabled">A3</a></li>
+                    <li><a class="dropdown-item disabled">A5</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">熱敏紙</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">藍圖</a>
+                </li>
+              </ul>
+              <a href="cart.html">
+                <div class="cart">
+                  <i class="bi bi-bag"></i>
+                  <div id="cartAmount" class="cartAmount">0</div>
+                </div>
+              </a>
+            </div>
+          </nav>
+        </header>
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <i class="bi bi-bag" style="font-size:70px"></i>
+      <h2>購物車</h2>
+    </div>
+
+    <div class="row g-5" id="row">
+      <div class="col-lg-4 order-md-last">
+        <h4 class="cart-list">購買列表</h4>
+        <div class="shopping-cart" id="shopping-cart"></div>
+        <div id="label" class="text-center"></div>
+      </div>
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">聯絡資料</h4>
+        <form class="needs-validation" action="#" method="POST">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">姓 Last name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="姓" name="lastName" required>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">名 First name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="名" value="">
+            </div>
+
+            <div class="col-sm-6">
+              <label for="phone" class="form-label">電話號碼 Phone no.</label>
+                <input type="text" class="form-control" id="phone" placeholder="電話" required>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="email" class="form-label">Email <span class="text-muted">(選填)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">地址 Address</label>
+              <input type="text" class="form-control" id="address" placeholder="XX大廈 X棟 X樓X單位" required>
+            </div>
+
+            <div class="col-sm-4">
+              <label for="country" class="form-label">國家 Country</label>
+              <select class="form-select" id="country" required>
+                <option value="">請選</option>
+                <option>中國</option>
+              </select>
+            </div>
+
+            <div class="col-sm-4">
+              <label for="state" class="form-label">省份 State</label>
+              <select class="form-select" id="state" required>
+                <option value="">請選</option>
+                <option>廣東</option>
+                <option>海南</option>
+                <option>福建</option>
+                <option>東北</option>
+                <option>雲南</option>
+                <option>北京</option>
+                <option>廣西</option>
+                <option>河南</option>
+                <option>其他</option>
+              </select>
+            </div>
+
+            <div class="col-sm-4">
+              <label for="state" class="form-label">城市 City</label>
+              <select class="form-select" id="city" required>
+                <option value="">請選</option>
+                <option>澳門</option>
+                <option>北京</option>
+                <option>香港</option>
+                <option>上海</option>
+                <option>三亞</option>
+                <option>唐山</option>
+                <option>九江</option>
+                <option>鄭洲</option>
+                <option>其他</option>
+                </select>
+            </div>
+              <div class="col-12">
+                <label for="" class="form-label">備註<span class="text-muted">(選填)</span></label>
+                <input type="text" class="form-control" id="request" placeholder="特別要求">
+              </div>
+            <button type="submit" class="checkout">訂購 Order</button>
+        </div>   
+        </form>
+      </div>
+    </div>
+  </main>
+
+</div>
+  <!-- FOOTER -->
+  <footer class="container-footer">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p class="p-footer">©2022 CityU Macau Web Class B．<a href="disclaimer.html">免責聲明</a>．<a href="contact.html">聯絡我們</a></p>
+  </footer>
+  </body>
+  <script src="src/data.js"></script>
+  <script src="src/order.js"></script>
+</html>

@@ -1,0 +1,35 @@
+let shopItemData = [{
+    id:"a4pack",
+    name:"A4單包",
+    price:33,
+    desc:"白色复印紙（70g）",
+    img:"image/a4pack.jpg"
+},
+{
+    id:"a4box",
+    name:"A4一箱",
+    price:160,
+    desc:"一箱5包",
+    img:"image/a4box.jpeg"
+},
+{
+    id:"thermosingle",
+    name:"熱敏紙單卷",
+    price:6,
+    desc:"60x50",
+    img:"image/thermo.gif"
+},
+{
+    id:"thermobox",
+    name:"紙敏紙一箱",
+    price:270,
+    desc:"一箱50卷",
+    img:"image/thermobox.jpg"
+},
+{
+    id:"blueprint",
+    name:"A3雙面藍圖紙",
+    price:60,
+    desc:"500張/包",
+    img:"image/blueprint.png"
+}]

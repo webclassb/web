@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>海南佳敏紙品有限公司</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link href="src/f2.css" rel="stylesheet">
+  </head>
+    <body>
+    <!-- Navbar -->
+    <header>    
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:green;">
+        <a class="navbar-brand" href="index.html">海南佳敏</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navDropdown">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navDropdown">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">多功能复印紙</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="A4.html">A4</a></li>
+                <li><a class="dropdown-item disabled">A3</a></li>
+                <li><a class="dropdown-item disabled">A5</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">熱敏紙</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">藍圖</a>
+            </li>
+          </ul>
+          <a href="cart.html">
+            <div class="cart">
+              <i class="bi bi-bag"></i>
+              <div id="cartAmount" class="cartAmount">0</div>
+            </div>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+<main>
+<!-- Carousel -->
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="overlay-image" style="background-image:url(image/a4.gif)"></div>
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1 class="p1">多功能复印紙</h1>
+            <p class="p1">平滑順暢，辦公保障</p>
+            <p><a class="btn btn-lg btn-primary" href="#">立即購買</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="overlay-image" style="background-image:url(image/thermo.gif)"></div>
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>熱敏紙</h1>
+            <p>不易掉色顯示清晰，打印清晰</p>
+            <p><a class="btn btn-lg btn-primary" href="#">立即購買</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="overlay-image" style="background-image:url(image/blueprint.gif)"></div>
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>設計藍圖紙</h1>
+            <p>高不透明，柔韌耐用</p>
+            <p><a class="btn btn-lg btn-primary" href="#">立即購買</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<!-- ISO -->
+  <div class="container-fluid-iso">
+    <div class="row">
+    <div class="col-sm-3">
+        <img src="image/logo-sgs-iso-9001.jpg">
+        <h6>ISO 9000</h6>
+        <p class="iso">質量管理體系</p>
+    </div>
+    <div class="col-sm-3">
+        <img src="image/logo-sgs-iso-14001.jpg">
+        <h6>ISO 14001</h6>
+        <p class="iso">環境管理體系</p>
+    </div>
+    <div class="col-sm-3">
+        <img src="image/sgs_iso_45001_tcs_lr.jpg">
+        <h6>ISO 45001</h6>
+        <p class="iso">職業健康安全管理體系</p>
+    </div>
+    <div class="col-sm-3">
+        <img src="image/logo-emas.jpg">
+        <h6>EMAS</h6>
+        <p class="iso">歐盟生態管理和審核體系</p>
+    </div>
+  </div>
+</div>
+
+<!-- outside links -->
+
+    <hr class="featurette-divider">
+  <section class="s1">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">順豐速運<span class="text-muted">訂單追蹤</span></h2><br>
+        <p class="lead">輕鬆查看訂單進度</p>
+      </div>
+      <div class="col-md-5">
+        <a href="https://htm.sf-express.com/hk/tc/dynamic_function/waybill/">
+          <img src="image/sf_logo.jpg" width="100%" height="100%">
+        </a>
+      </div>
+    </div>
+  </section>
+
+    <hr class="featurette-divider">
+
+    <section class="s1">
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">澳門環境保護局</h2><br>
+        <p class="lead">更多環保資訊</p>
+      </div>
+      <div class="col-md-5">
+       <a href="https://www.dspa.gov.mo/richtext_buildings.aspx?a_id=1578363510">
+        <img src="image/mesa.png"  width="400" height="400">
+       </a>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="container-footer">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p class="p-footer">©2022 CityU Macau Web Class B．<a href="disclaimer.html">免責聲明</a>．<a href="contact.html">聯絡我們</a></p>
+  </footer>
+</main>
+</body>
+<script src="src/shoppingBag.js"></script>
+</html>
+
+    
