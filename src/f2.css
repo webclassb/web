@@ -226,19 +226,11 @@ section {
   .shop {
       grid-template-columns: repeat(2, 223px);
   }
-
-  img {
-    font-size:200px;
-  }
 }
 
 @media (max-width: 500px){
   .shop {
       grid-template-columns: repeat(1, 223px);
-  }
-
-  img {
-    font-size:150px;
   }
 }
 
