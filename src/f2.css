@@ -6,9 +6,8 @@ body {
   }
 
 a {
-    text-decoration:none;
+  text-decoration:none;
 }
-
   i {
     cursor: pointer;
   }
@@ -227,11 +226,19 @@ section {
   .shop {
       grid-template-columns: repeat(2, 223px);
   }
+
+  img {
+    font-size:small;
+  }
 }
 
 @media (max-width: 500px){
   .shop {
       grid-template-columns: repeat(1, 223px);
+  }
+
+  img {
+    font-size-adjust:small;
   }
 }
 
@@ -317,6 +324,7 @@ section {
 
 .text-center {
   margin:20px;
+  text-align:center;
 }
 
 .HomeBtn, .checkout, .order, .btn {
@@ -327,6 +335,10 @@ section {
   font-size:30px;
   padding:10px;
   width:100%;
+}
+
+.btn-lg,.btn-primary {
+  border:2px solid;
 }
 
 .cart-button, .cart-h2 {
@@ -345,8 +357,9 @@ section {
   color:rgba(255,255,255,.55);
   font-size:30px;
   padding:10px;
-  margin:10px;
+  margin:20px 0px;
   width:100%;
+  
 }
 
 .bi-x-lg {
@@ -372,6 +385,7 @@ section {
   border: 2px solid #212529;
   border-radius:5px;
   display: flex;
+  text-align:center;
 }
 
 .title-price-x {
