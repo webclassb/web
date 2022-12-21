@@ -228,7 +228,7 @@ section {
   }
 
   img {
-    font-size:small;
+    font-size:200px;
   }
 }
 
@@ -238,7 +238,7 @@ section {
   }
 
   img {
-    font-size-adjust:small;
+    font-size:150px;
   }
 }
 
